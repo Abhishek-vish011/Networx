@@ -1,0 +1,33 @@
+.container{
+    padding: 1.2rem;
+    background: rgb(240, 240, 240);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h2{
+    font-family: cursive;
+}
+.navbarOptionContainer{
+    display: flex;
+}
+
+.buttonJoin{
+     cursor: pointer;
+  font-size: 1.4rem;
+  background-color: #71b6db;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 6px #5a95a8; /* shadow to create depth */
+  transition: all 0.2s ease;
+  position: relative;
+}
+.buttonJoin:active {
+  transform: translateY(4px);     /* move down on click */
+  box-shadow: 0 2px #5a95a8;      /* smaller shadow when pressed */
+}
