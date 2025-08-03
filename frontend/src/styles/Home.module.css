@@ -1,0 +1,321 @@
+/* Font & Container */
+.container {
+  font-family: "Poppins", sans-serif;
+  padding: 1.2rem;
+}
+
+/* Animation */
+@keyframes fadeSlideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.animateFadeSlide {
+  animation: fadeSlideUp 0.8s ease-in-out both;
+}
+
+/* Layout */
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  min-height: 80vh;
+  animation: fadeSlideUp 0.8s ease-in-out both;
+}
+
+.mainContainer_left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.mainContainer_right {
+  flex: 1;
+  min-width: 280px;
+  border-radius: 50px;
+  animation: scaleIn 0.8s ease-in-out forwards;
+}
+
+/* Animations */
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Text Styling */
+.mainContainer_left > p:nth-child(1) {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 400;
+  background: -webkit-linear-gradient(45deg, rgb(56, 56, 56), rgb(0, 0, 0));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mainContainer_left > p:nth-child(2) {
+  color: #4d4d4d;
+  font-size: clamp(1rem, 3vw, 1.6rem);
+}
+
+.netImage {
+  max-width: 100%;
+}
+
+/* Button */
+.buttonJoin {
+  width: fit-content;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+  margin-top: 0.8rem;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  background-color: rgb(74, 186, 213);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+}
+
+/* Belt Section */
+.belte {
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  background: rgb(224, 237, 243);
+  padding: 1.4rem 1.2rem;
+}
+
+/* Image Grid */
+.networkImage {
+  padding: 1.4rem 1.2rem;
+  max-width: 100%;
+}
+
+.firstSet {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-auto-rows: auto;
+  gap: 1rem;
+  padding: 1rem;
+  animation: fadeSlideUp 0.8s ease-in-out both;
+}
+
+.firstSet img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: block;
+  height: auto;
+}
+
+.firstSet img:hover {
+  transform: scale(1.08) translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Second Section */
+.secondSet {
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(76, 76, 76);
+  animation: fadeSlideUp 0.8s ease-in-out both;
+}
+
+.secondSetUp {
+  padding-bottom: 2rem;
+}
+
+.secondSet h2 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: #263b5b;
+}
+
+.secondSet .buttonJoin {
+  background-color: rgb(66, 168, 209);
+  color: white;
+  padding: 1rem 1.6rem;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  border-radius: 20px;
+  margin: 1.2rem auto 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.secondSet .buttonJoin:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Middle Section */
+.middleSet {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.1rem;
+  background: rgb(235, 235, 235);
+  margin-top: 20px;
+  animation: fadeSlideUp 0.8s ease-in-out both;
+}
+
+.middleSet h4 {
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+}
+
+.middleSet p {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+}
+
+.middleSet img {
+  width: 100%;
+  padding: 20px;
+  max-width: 600px;
+}
+
+/* Footer */
+.footer {
+  background-color: #0f1c2e;
+  color: #fff;
+  padding: 3rem 1.5rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+  animation: fadeSlideUp 0.8s ease-in-out both;
+}
+
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footerLogo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.footerLogo p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.footerLinks h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #ddd;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 0.6rem;
+}
+
+.footerLinks a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: #87b5cd;
+}
+
+.footerBottom {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #222;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .mainContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    padding-top: 2rem;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .mainContainer_left > p:nth-child(1) {
+    font-size: 2em;
+    font-weight: 400;
+    background: -webkit-linear-gradient(45deg, rgb(56, 56, 56), rgb(0, 0, 0));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .netImage {
+    width: 20rem;
+  }
+
+  .middleSet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footerLogo,
+  .footerLinks {
+    width: 100%;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .mainContainer_left > p:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .mainContainer_left > p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  .buttonJoin {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .secondSet {
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  .firstSet img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+}

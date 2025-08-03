@@ -1,0 +1,182 @@
+.container{
+    padding: 1.3rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.backDropContainer{
+    width: 100%;
+    height: 30vh;
+    background: url("https://images.pexels.com/photos/28281005/pexels-photo-28281005.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+.backDropContainer img {
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%;      
+    position: absolute;
+    bottom: -30%;
+    left: 8%;
+    text-align: center;
+}
+.profileContainer_detail{
+    padding-top: 6.5rem;
+}
+.card{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.card_profileContainer{
+    display: flex;
+}
+.card_profileContainer>img{
+    width: 3.4rem;
+    height: auto;
+    height: 3.4rem;
+    object-fit: cover;
+}
+.connectBtn {
+  padding: 0.3rem 0.8rem;
+  background: rgba(3, 93, 183, 0.905); /* vibrant blue */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(3, 93, 183, 0.3);
+}
+
+.connectBtn:hover {
+  background: rgba(3, 93, 183, 1);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(3, 93, 183, 0.5);
+}
+
+.connectBtn:active {
+  transform: scale(0.96);
+  box-shadow: 0 3px 6px rgba(3, 93, 183, 0.4);
+}
+
+.connectedBtn{
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    border: 1px solid gray;
+    outline: none;
+    color:  rgb(3, 93, 183, 0.905);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.connectedButton {
+  background-color: #10a8b9; /* emerald green */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 12px rgba(19, 95, 140, 0.992);
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.connectedButton::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #34c8d3;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 0 0 0 rgba(52, 145, 211, 0.7);
+}
+
+.connectedButton:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 18px rgba(16, 109, 185, 0.889);
+}
+
+.connectedButton:active {
+  transform: scale(0.96);
+}
+
+/* Glowing pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7);
+  }
+  70% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 10px rgba(52, 211, 153, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+  }
+}
+.recentCard {
+  flex: 0.4;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+/* 3D hover effect */
+.recentCard:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.workHistoryContainer{
+    display: flex;
+    gap: 1.4rem;
+    padding-top: 1.4rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.workHistoryCard{
+    min-width: fit-content;
+    padding-inline: 2.5rem;
+    padding-block: 1rem;
+    background: rgb(208, 146, 146);
+    box-shadow: 10px 10px 15px rgb(173, 173, 173);
+}
+
+.profileContainer_flex{
+    display: flex;
+    gap: 0.7rem;
+}
+
+@media only screen and (max-width: 600px){
+    .profileContainer_flex{
+        flex-direction: column;
+    }
+    .card{
+        margin-top: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .card_profileContainer img{
+        width: 6rem;
+        height: 6rem;
+    }
+}

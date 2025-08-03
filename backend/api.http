@@ -1,0 +1,78 @@
+
+POST http://localhost:9080/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Abhay123",
+     "password": "Abhaypassword",
+    "email": "Abhay@example.com",
+    "name": "Abhay"
+}
+
+
+###
+POST http://localhost:9080/login HTTP/1.1
+Content-Type: application/json
+
+{
+      "password": "Abhaypassword",
+    "email": "Abhay@example.com"
+}
+
+###
+POST http://localhost:9080/login HTTP/1.1
+Content-Type: application/json
+
+{
+     "password": "abhaypassword",
+    "email": "abhay@example.com"
+}
+
+###
+GET http://localhost:9080/get_user_and_profile HTTP/1.1
+Content-Type: application/json
+
+{
+  "token":  "6e5bd6e4ebcf93f12409e0a6d438823ca55fcadf450a84f4495d74e47bc7f476"
+}
+###
+GET http://localhost:9080/get_user_and_profile HTTP/1.1
+Content-Type: application/json
+
+{
+  "token":  "5c7421f060213f6aa52188c3e70fa7245515f4e266ffc77a488c029d1f79c7f1"
+}
+###
+POST http://localhost:9080/delete_post HTTP/1.1
+Content-Type: application/json
+
+{
+  "_id": "687a29b1944f53ebc88b404c"
+}
+
+###
+POST http://localhost:9080/update_profile_data HTTP/1.1
+Content-Type: application/json
+
+{
+  "token":  "eb4d17a35b5a126eea69ce0a512af00254420b31b628581e19396501e21fb53d",
+  "bio": "Consistency is key of power that made me perfect",
+  "currentPost": "CEO",
+  "pastWork": [
+      { 
+       "company": "Labmentrix",
+       "position": "Developement Management",
+       "years": "3"
+       }
+  ],
+  "education":[
+    {
+        "school": "IIIT",
+        "degree": "B.Tech",
+        "fieldOfStudy": "2019-25"
+    }
+  ]
+}
+
+###
+GET http://localhost:9080/get_all_user 

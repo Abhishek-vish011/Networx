@@ -1,0 +1,64 @@
+
+.discoverHead {
+  width: 100%;
+  background: linear-gradient(145deg, rgb(23, 23, 84), silver); 
+  background: rgb(1, 1, 18);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 
+  inset 0 1px 1px rgba(255, 255, 255, 0.6);
+  font-family: "Poppins", sans-serif;
+  color: white; 
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.discoverHead:hover {
+  transform: translateY(-4px);
+  background: white;
+  color: black;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2),
+  inset 0 1px 1px rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+.nameData{
+  margin-left: 2rem;
+}
+
+.allUserProfile{
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.userCard{
+    display: flex;
+    gap: 1.2rem;
+    padding: 1.3rem;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0px rgb(164, 160, 160);
+    cursor: pointer;
+    transition: all 3s;
+    width: 100%;
+}
+.userCard:hover{
+    transform: scale(1.02);
+    border: 1px solid rgb(1, 1, 18);
+}
+.userCard_image {
+  width: 80px;
+  height: 80px;
+ border-radius: 50%;
+ overflow: hidden;  
+ object-fit: cover; 
+}
+
+ @media screen and (max-width: 600px)  {
+       .allUserProfile{
+          max-width: 100%;
+       }
+ }

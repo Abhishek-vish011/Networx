@@ -1,0 +1,94 @@
+.container{
+    padding: 1.2rem;
+    background: rgb(1, 6, 27);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h2{
+    font-family: cursive;
+    color: white;
+    cursor: pointer;
+}
+.navbarOptionContainer{
+    display: flex;
+}
+
+.fixBtn {
+  background: rgb(158, 80, 80); /* Sky & Deep Blue */
+  color: white;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(27, 28, 29, 0.4);
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.fixBtn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(162, 61, 61, 0.8);
+}
+
+.fixBtn:active {
+  transform: scale(0.96) translateY(1px);
+}
+.outBtn {
+  background: black; /* Rose to Purple */
+  color: white;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(94, 93, 95, 0.4);
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.outBtn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 18px rgb(16, 6, 48);
+}
+
+.outBtn:active {
+  transform: scale(0.96) translateY(1px);
+}
+
+.buttonJoin{
+     cursor: pointer;
+  font-size: 1.4rem;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 6px #7f7f7f; /* shadow to create depth */
+  transition: all 0.2s ease;
+  position: relative;
+}
+.buttonJoin:active {
+  transform: translateY(4px);     /* move down on click */
+  box-shadow: 0 2px #5a95a8;      /* smaller shadow when pressed */
+}
+
+@media (max-width: 768px) {
+  .fixBtn, .outBtn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fixBtn, .outBtn {
+    font-size: 0.7rem;
+    padding: 0.6rem 0.8rem;
+    max-width: 100%;
+  }
+}
